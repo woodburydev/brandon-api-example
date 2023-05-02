@@ -8,7 +8,7 @@ function App() {
   const getTodos = () => {
     setApiResponseData("loading");
     axios
-      .get("https://jsonplacehol.typicode.com/posts")
+      .get("https://jsonplaceholder.typicode.com/posts")
       .then((axiosResponse) => {
         setApiResponseData(axiosResponse.data);
       })
